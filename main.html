@@ -1,0 +1,240 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+<title>TricTrack</title>
+<link rel="stylesheet" href="css/style.css"/>
+<!--fav-icon-->
+<link rel="shortcut icon" href="images/tryc1.png"/>
+<style>
+    /* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 0.95rem;
+  transition: 0.4s;
+  color: #151111;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    width: 400px;
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+
+<body>
+    
+    <section class="main" style="background-image: url(images/bg.jpg);">
+        
+        <nav>
+            <a href="#" class="logo">
+                <img src="images/logo.png" width="280px" />
+            </a>
+            <input class="menu-btn" type="checkbox" id="menu-btn"/>
+            <label class="menu-icon" for="menu-btn">
+                <span class="nav-icon"></span>
+            </label>
+            <ul class="menu" style="border-radius: 5px;">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="user-profile.html">Profile</a></li>
+                <li><a href="History.html">History</a></li>
+                <li><a style="color: #F14D5D;">Bryan Bolarde</a></li>
+                <li><a href="index.html" class="active" style="width:auto; border-radius: 5px; cursor: pointer;">Logout</a></li>
+            </ul>
+        </nav>
+
+        
+        <!--main-content-->
+        <div class="home-content">
+            
+            <!--text-->
+            <div class="home-text" >
+                <h1 style="color: white; letter-spacing: 3px;">Find a tricycle</h1>
+                <h3 style="color: white; letter-spacing: 3px;">Driver body number</h3>
+           
+                
+                    <input type="text" list="driver" class="input-field">
+                    <datalist id="driver">
+                        <option>123</option>
+                        <option>456</option>
+                        <option>789</option>
+                    </datalist>
+              
+                
+                <h3 style="color: white; letter-spacing: 3px;">Destination </h3>                
+                <input type="text" list="destination" class="input-field">
+                <datalist id="destination">
+                    <option> Subic to purok 5</option>
+                    <option> Waltermart gang kila melmark</option>
+                    <option> Kila bryan hanggang sa court</option>
+                </datalist>
+
+
+                <label>
+                    <h3 style="color: white;">Distance:</h3>
+                </label>
+                
+                <input type="text" value="5 kilometers" style="width: 130px; margin-left: auto; margin-right: auto;" disabled>
+                <input type="text" value="30 mins away" style="width: 150px; margin-left: auto; margin-right: auto;" disabled>
+                <!-- <select>
+                    <option></option>
+                    <option>5 Kilometers</option>
+                    <option>3 kilometers</option>
+                    <option>2 kilometers</option>
+                </select> -->
+                <br>
+                <a href="#" class="main-login" style="border-radius: 5px;">Find</a>
+                <!-- <p style="color: white;">For Mangahan Vaca Purok 4</p> -->
+          
+         
+            </div>
+            <!--img-->
+            <div class="home-img" style="width: 500px;">
+                <img src="images/tryc1.png" width="500px" style="text-shadow: 20px 22px;"/>
+                <marquee width="100%" direction="left" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">A new modern way to commute !</a>
+                    </marquee>
+                    <marquee width="100%" direction="right" onmouseover="this.stop();"
+                onmouseout="this.start();">
+                    <a href="#" style="color: white;">A quick way to find a ride.</a>
+                    </marquee>
+            </div>
+            
+        </div>
+        
+        <!--arrow-->
+        <!-- <div class="arrow"></div>
+        <span class="scroll">Scroll</span> -->
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--services----------------------->
+    <!-- <section class="services">
+        
+        <div class="services-heading">
+            <h2>OUR SERVICE</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur ad asese do eiusmod tempor incididunt utarla oreetdolo magna aliqua</p>
+        </div>
+        </div>
+    </section> -->
+    
+    <!--footer------------->
+    <footer>
+        <p>Copyright (C) - 2023 | Developed By GaragowTeam </p>
+    </footer>
+
+    
+</body>
+
+</html>
