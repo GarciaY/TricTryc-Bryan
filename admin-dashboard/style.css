@@ -13,6 +13,166 @@ body{
   background: rgb(226, 226, 226);
 }
 
+/*modal start */
+.box{
+  max-width: 650px;
+  position: absolute;
+  border-radius: 12px;
+  border: 1 solid black;
+  /* width: 330px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 28px;
+ 
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 18px;
+  background-color: #fcfcfc;
+  display: none;
+
+}
+
+/* header part*/
+.circle .modal-head{
+  display: inline-block;
+  width: 18px;
+  height: 20px;
+  margin: 0 auto;
+  margin-top: 6px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+/* body part of user icon */
+.circle .modal-body{
+  display: inline-block;
+  width: 35px;
+  margin: 0 auto;
+  margin-top: 26px;
+  height: 25px;
+  border-radius: 50%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+}
+
+.close{
+  display:block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  color: tomato;
+  font-size: 34px;
+}
+
+.close:hover{
+  background-color: red;
+  border-radius: 0 12px 0 0;
+  color: #fcfcfc;
+  cursor: pointer;
+}
+
+.modal-box{
+  margin-top: 43px;
+  /* padding-top: 43px; */
+  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px 0;
+ 
+}
+
+label{
+  display: block;
+  position: absolute;
+  font-size: 18px;
+  color: rgb(169, 171, 170);
+  margin-top: -62px;
+  padding-left: 18px;
+  text-align: left;
+  pointer-events: none;
+  transition: .4s;
+}
+
+input{
+  width: 95%;
+  height: 42px;
+  margin: 10px 1px 28px 1px;
+   padding: 0 10px;
+  font-size: 18px;
+  color: #555;
+  border: rgb(65, 118, 97) 1px solid;
+  outline: none;
+  border-radius: 5px;
+}
+
+input:focus~label,
+input:valid~label{
+  margin-top: -95px;
+  padding-left: 8px;
+  color: #299B63;
+  font-weight: 500;
+}
+
+h1{
+  margin-top: 28px;
+  margin-bottom: 28px;
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.circle{
+  position: absolute;
+  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  top: -35px;
+  right: 0;
+  left: 0;
+  background-color: rgb(1, 170, 133);
+  border: 2px #fff solid;
+}
+
+.box .circle, .box span{
+  display: inline-block;
+  position: absolute;
+}
+.box span{
+  height: 2px;
+  background-color: rgb(1, 170, 133);
+}
+.body-text{
+  font-size: 17px;
+  line-height: 25px;
+}
+p{
+  margin-top: 28px;
+  font-size: 22px;
+}
+
+@media(max-width: 600px){
+  .box{
+      min-width: 280px;
+  }
+  .modal-box{
+      max-height: 380px;
+      overflow: auto;
+  }
+
+  .content::-webkit-scrollbar{
+      width: 0;
+  }
+
+}
+/* modal end */
+
 .topbar {
   position: fixed;
   background-color: #fff;
@@ -169,6 +329,8 @@ img {
   color: #666;
   text-align: center
 }
+
+
 
 @media (max-width:1115px) {
   .sidebar {
@@ -442,6 +604,8 @@ button{
   cursor: pointer;
   background: transparent;
   border: 1px solid #4AD489;
+  width: 100%;
+  display: block;
 }
 button:hover{
   background: #4AD489;

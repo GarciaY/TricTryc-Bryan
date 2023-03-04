@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Residence Table</title>
   <link rel="stylesheet" href="style.css" />
-
+  <script defer src="../js/residence-modal.js"></script>
   <!-- Font Awesome Cdn Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
 </head>
@@ -67,7 +67,39 @@
     <br>
     <br>
 
-   
+    <section class="box">
+      <div class="close">&times;</div>
+      <!-- <div class="circle">
+        <span class="modal-head"></span>
+        <span class="modal-body"></span>
+      </div> -->
+      <div class="modal-box">
+        <div>
+          <input type="text" class="first_name" required="required">
+          <label for="first_name">First Name</label>
+        </div>
+        <div>
+          <input type="text" class="middle_name" required="required">
+          <label for="middle_name">Middle Name</label>
+        </div>
+        <div>
+          <input type="text" class="last_name" required="required">
+          <label for="last_name">Last Name</label>
+        </div>
+        <div>
+          <input type="text" class="contact" required="required">
+          <label for="contact">Contact</label>
+        </div>
+        <div>
+          <input type="date" class="date" required="required">
+        </div>
+        
+       
+      </div>
+      <button class="btnSubmit">Submit</button>
+    </section>
+
+
       <section class="attendance">
         <div class="attendance-list">
           <h1>Residence Table</h1>
@@ -91,7 +123,7 @@
                 <td>Bolarde</td>
                 <td>09126508268</td>
                 <td>01-11-23</td>
-                <td><button>Edit</button><button>Delete</button></td>
+                <td><button class="btnModal">Edit</button><button>Delete</button></td>
               </tr>
               <tr class="active">
                 <td>01</td>
@@ -100,7 +132,7 @@
                 <td>Bolarde</td>
                 <td>09126508268</td>
                 <td>01-11-23</td>
-                <td><button>Edit</button><button>Delete</button></td>
+                <td><button class="btnModal">Edit</button><button>Delete</button></td>
               </tr>
               <tr>
                 <td>01</td>
@@ -109,7 +141,7 @@
                 <td>Bolarde</td>
                 <td>09126508268</td>
                 <td>01-11-23</td>
-                <td><button>Edit</button><button>Delete</button></td>
+                <td><button class="btnModal">Edit</button><button>Delete</button></td>
               </tr>
               <tr>
                 <td>01</td>
@@ -118,7 +150,7 @@
                 <td>Bolarde</td>
                 <td>09126508268</td>
                 <td>01-11-23</td>
-                <td><button>Edit</button><button>Delete</button></td>
+                <td><button class="btnModal">Edit</button><button>Delete</button></td>
               </tr>
               <tr>
                 <td>01</td>
@@ -127,12 +159,15 @@
                 <td>Bolarde</td>
                 <td>09126508268</td>
                 <td>01-11-23</td>
-                <td><button>Edit</button><button>Delete</button></td>
+                <td><button class="btnModal">Edit</button><button>Delete</button></td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
+
+
+
     </section>
   </div>
 
